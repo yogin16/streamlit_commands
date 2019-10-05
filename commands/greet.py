@@ -15,7 +15,7 @@ DESCRIPTION = """
 
 
 @register(TITLE)
-class PipelineDAGVisualizer(Command):
+class Greet(Command):
     def title(self) -> str:
         return TITLE
 
