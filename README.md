@@ -97,7 +97,7 @@ It's a python namedtuple
 ```python
 ExecutionResult = namedtuple("ExecutionResult", ["type", "payload"])
 ```
-#### Supported Types:
+#### Supported Result Types:
 - **"text"**: for showing text result on response, when the `payload` is a string to show
 - **"json"**: for showing json result on response when `payload` is a json to show
 - **"graphviz"**: for showing graph on response when `graphviz` is a graphviz Graph
