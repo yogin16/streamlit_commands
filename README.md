@@ -61,6 +61,11 @@ It is must to extend your command to be stateless - as it is expecting command t
 ## Instructions:
 (Assumes python3)
 ### Start the app
+Install streamlit:
+```bash
+pip3 install -r requirements.txt
+```
+Run the server:
 ```bash
 sh start.sh
 ```
