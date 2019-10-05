@@ -55,7 +55,11 @@ class Greet(Command):
 
 **Please note:** These commands are scanned from the `commands` package on the start up of the app. You can just checkout the boiler plate and start adding any new command in the `commands` directory as per your needs.
 
+
+It is must to extend your command to be stateless - as it is expecting command to be Singleton. Also, the command should extend the base `Command` class and have `@register()` decorator as shown in above example.
+
 ## Instructions:
+(Assumes python3)
 ### Start the app
 ```bash
 sh start.sh
@@ -82,9 +86,9 @@ class Command(metaclass=Singleton):
 ```
 
 ### Supported Field Types:
-- **text:** For normal text input
-- **text_area:** For text area input
-- **selectbox:** For picklist
+- **"text"**: For normal text input
+- **"text_area"**: For text area input
+- **"selectbox"**: For picklist
 (more coming soon...)
 
 ### ExecutionResult
@@ -94,7 +98,7 @@ It's a python namedtuple
 ExecutionResult = namedtuple("ExecutionResult", ["type", "payload"])
 ```
 #### Supported Types:
-- **text:** for showing text result on response, when the `payload` is a string to show
-- **json:** for showing json result on response when `payload` is a json to show
-- **graphviz:** for showing graph on response when `graphviz` is a graphviz Graph
+- **"text"**: for showing text result on response, when the `payload` is a string to show
+- **"json"**: for showing json result on response when `payload` is a json to show
+- **"graphviz"**: for showing graph on response when `graphviz` is a graphviz Graph
 (more coming soon...)
