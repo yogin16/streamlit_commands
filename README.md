@@ -1,5 +1,8 @@
 # streamlit_commands
-The admin console for giving UI to the daily commands you run using streamlit
+The missing admin console for giving UI to the daily python commands you run using [streamlit](https://streamlit.io).
+
+
+![Executing commands in Admin Console|635x380](https://github.com/yogin16/streamlit_commands/blob/master/st-commands.gif)
 
 Boilerplate containing form builder and default result render support for quickly and easily adding commands screen:
 
