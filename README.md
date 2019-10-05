@@ -1,5 +1,5 @@
 # streamlit_commands
-The missing admin console for giving UI to the daily python commands you run using [streamlit](https://streamlit.io).
+The missing admin console for giving UI to the daily python commands you run, using [streamlit](https://streamlit.io).
 
 
 ![Executing commands in Admin Console|635x380](https://github.com/yogin16/streamlit_commands/blob/master/st-commands.gif)
