@@ -54,3 +54,47 @@ class Greet(Command):
 ```
 
 **Please note:** These commands are scanned from the `commands` package on the start up of the app. You can just checkout the boiler plate and start adding any new command in the `commands` directory as per your needs.
+
+## Instructions:
+### Start the app
+```bash
+sh start.sh
+```
+### The Command API
+```python
+class Command(metaclass=Singleton):
+    """
+    The normal API browser command. The fields are used in form_builder to render the form on canvas
+    And allows hook to execute the command on input
+    """
+
+    def title(self) -> str:
+        raise NotImplementedError
+
+    def form_fields(self) -> List[dict]:
+        raise NotImplementedError
+
+    def description(self) -> str:
+        return self.title()
+
+    def execute(self, params: dict) -> ExecutionResult:
+        raise NotImplementedError
+```
+
+### Supported Field Types:
+- **text:** For normal text input
+- **text_area:** For text area input
+- **selectbox:** For picklist
+(more coming soon...)
+
+### ExecutionResult
+To show command result in UI. (return value of command's `execute` method)
+It's a python namedtuple
+```python
+ExecutionResult = namedtuple("ExecutionResult", ["type", "payload"])
+```
+#### Supported Types:
+- **text:** for showing text result on response, when the `payload` is a string to show
+- **json:** for showing json result on response when `payload` is a json to show
+- **graphviz:** for showing graph on response when `graphviz` is a graphviz Graph
+(more coming soon...)
