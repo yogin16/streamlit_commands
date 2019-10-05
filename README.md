@@ -98,7 +98,6 @@ class Command(metaclass=Singleton):
 - **"text"**: For normal text input
 - **"text_area"**: For text area input
 - **"selectbox"**: For picklist
-(more coming soon...)
 
 ### ExecutionResult
 To show command result in UI. (return value of command's `execute` method)
@@ -110,4 +109,7 @@ ExecutionResult = namedtuple("ExecutionResult", ["type", "payload"])
 - **"text"**: for showing text result on response, when the `payload` is a string to show
 - **"json"**: for showing json result on response when `payload` is a json to show
 - **"graphviz"**: for showing graph on response when `graphviz` is a graphviz Graph
-(more coming soon...)
+
+### TODO:
+- add support all of field types streamlit allows
+- add support all of result/payload types streamlit allows
