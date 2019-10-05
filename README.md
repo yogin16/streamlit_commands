@@ -64,6 +64,10 @@ It is must to extend your command to be stateless - as it is expecting command t
 ```bash
 sh start.sh
 ```
+or
+```bash
+streamlit run app.py
+```
 ### The Command API
 ```python
 class Command(metaclass=Singleton):
