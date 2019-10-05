@@ -1,2 +1,2 @@
-# streamlit-commands
+# streamlit_commands
 The admin console for giving UI to the daily commands you run using streamlit
