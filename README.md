@@ -50,4 +50,4 @@ class Greet(Command):
 
 ```
 
-Please note: These commands are scanned from thee `commands` package on the start up of the app. You can just checkout the boiler plate and start adding any new command in the `commands` directory as per your needs.
+**Please note:** These commands are scanned from thee `commands` package on the start up of the app. You can just checkout the boiler plate and start adding any new command in the `commands` directory as per your needs.
